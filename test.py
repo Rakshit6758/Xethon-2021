@@ -62,40 +62,6 @@ def create_note():
             speaker.say("Error")
 
 
-# def add_todo():
-    
-#     global recognizer
-#     speaker.say("what todo do ypu want to add")
-#     speaker.runAndWait()
-
-#     done = False
-#     while not done:
-#         try:
-#             with speech_recognition.Microphone() as mic:
-#                 recognizer.adjust_for_ambient_noise(mic, duration=0.4)
-#                 audio = recognizer.listen(mic)
-
-#                 item = recognizer.recognize_google(audio)
-#                 item = item.lower()
-
-#                 todo_list.append(item)
-#                 done = True
-#                 speaker.say(f"I added {item} to the list!")
-#                 speaker.runAndWait()
-                
-#         except speech_recognition.UnknownValueError:
-#             recognizer = speech_recognition.Recognizer()
-#             speaker.say("I did not understand you ! please try again")
-#             speaker.runAndWait()
-
-
-# def show_todos():
-
-#     speaker.say("the items on your to do list are the following")
-#     for item in todo_list:
-#         speaker.say(item)
-#     speaker.runAndWait()
-
 
 def hello():
     speaker.say("hellow . what can i do for you")
