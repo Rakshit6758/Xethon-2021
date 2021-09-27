@@ -20,7 +20,7 @@ def transaction(info):
         account1 = mycursor.fetchall()
         mycursor.execute(f"select balance from banking_dataset where account_number={info[1]}")
         account2 = mycursor.fetchall()
-        print(account2[0])
+        print(account2)
         account1 = int(int(account1)-info[3])
         account2 = int(int(account2)+info[3])
         mycursor.execute(f"UPDATE banking_dataset SET balance = {account1} WHERE account_number = {str(info[0])}")
